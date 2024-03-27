@@ -1,7 +1,7 @@
 <div
     x-ref="benefits"
     id="benefits"
-    class="pb-32 pt-16 my-6 px-2 -mx-3 md:-mx-8 lg:-mx-16 sm:px-16 bg-zinc-100 dark:bg-gray-800"
+    class="pt-16 pb-32 px-3 bg-zinc-100 dark:bg-gray-800"
 >
 
     <h2 class="text-5xl font-bold bg-gradient-to-r from-[#7DB563] to-[#02A6A5] text-transparent bg-clip-text text-center mb-12" >

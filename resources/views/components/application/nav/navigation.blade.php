@@ -1,7 +1,7 @@
 <nav
     class="h-20 w-full bg-white dark:bg-gray-900 dark:border-b fixed top-0
             shadow-sm flex items-center justify-between py-1 px-6
-            border-b dark:border-gray-600"
+            border-b dark:border-gray-600 z-50"
 
     x-data="{
         activeSection: null,

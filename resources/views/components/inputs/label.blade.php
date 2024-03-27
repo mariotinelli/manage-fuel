@@ -7,8 +7,8 @@
 @php
     $class = "
         flex flex-col gap-1 w-full"
-        . ($errors->has($model) ? ' text-red-600 dark:text-red-400 ' : ' text-gray-950 dark:text-white ')
-        . $attributes->get('class');
+            . ($errors->has($model) ? ' text-red-600 dark:text-red-400 ' : ' text-gray-950 dark:text-white ')
+            . $attributes->get('class');
 @endphp
 
 <label
@@ -19,7 +19,7 @@
     <span class="text-sm font-medium leading-6" >
         {{ $label }}
         @if($required)
-            <sup class="text-danger-600 dark:text-danger-400 font-medium" >*</sup >
+            <sup class="text-red-600 dark:text-red-400 font-medium" >*</sup >
         @endif
     </span >
 
