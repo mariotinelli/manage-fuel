@@ -1,56 +1,15 @@
-<div class="pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900" >
-    <div class="flex flex-col w-full px-6 py-4 bg-white dark:bg-gray-900 shadow-md sm:rounded-lg" >
-        <x-application.nav.section-content
-            ref="home"
-            title="Início"
-        >
-            Teste
-        </x-application.nav.section-content >
+<div class="flex flex-col w-full bg-white dark:bg-gray-900 shadow-md sm:rounded-lg" >
 
-        <hr >
+    <x-application.sections.principal />
 
-        <x-application.nav.section-content
-            ref="resources"
-            title="Recursos"
-        >
-            Teste
-        </x-application.nav.section-content >
+    <x-application.sections.resources />
 
-        <hr >
+    <x-application.sections.benefits />
 
-        <x-application.nav.section-content
-            ref="benefits"
-            title="Benefícios"
-        >
-            Teste
-        </x-application.nav.section-content >
+    <x-application.sections.who-we-are />
 
-        <hr >
+    {{--    <x-application.sections.newsletter />--}}
 
-        <x-application.nav.section-content
-            ref="whoweare"
-            title="Quem somos"
-        >
-            Teste
-        </x-application.nav.section-content >
+    {{--    <x-application.sections.contact />--}}
 
-        <hr >
-
-        <x-application.nav.section-content
-            ref="newsletter"
-            title="Newsletter"
-        >
-            Teste
-        </x-application.nav.section-content >
-
-        <hr >
-
-        <x-application.nav.section-content
-            ref="contact"
-            title="Contato"
-        >
-            Teste
-        </x-application.nav.section-content >
-
-    </div >
 </div >
