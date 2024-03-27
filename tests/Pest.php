@@ -27,8 +27,29 @@ uses(TestCase::class, RefreshDatabase::class)->in('Feature');
 |
 */
 
-expect()->extend('toBeOne', function () {
-    return $this->toBe(1);
+
+//expect()->extend('toMatchDrivers', function (LengthAwarePaginator $expected) {
+//    $drivers = $this->value->map(function (Driver $driver) {
+//        return transformDriverToArray($driver);
+//    });
+//
+//    $expected = $expected->map(function (Driver $driver) {
+//        return transformDriverToArray($driver);
+//    });
+//
+//    expect($drivers->toArray())->toBe($expected->toArray());
+//});
+
+expect()->extend('assertPropertiesWired', function (array $properties) {
+    foreach ($properties as $property) {
+        $this->value->assertPropertyWired($property);
+    }
+});
+
+expect()->extend('assertSetLivewireForm', function (array $properties) {
+    foreach ($properties as $property => $expectedValue) {
+        $this->value->assertSet($property, $expectedValue);
+    }
 });
 
 /*
