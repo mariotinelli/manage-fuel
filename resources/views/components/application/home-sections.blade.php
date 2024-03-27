@@ -8,8 +8,8 @@
 
     <x-application.sections.who-we-are />
 
-    {{--    <x-application.sections.newsletter />--}}
+    <x-application.sections.newsletter />
 
-    {{--    <x-application.sections.contact />--}}
+    <x-application.sections.contact />
 
 </div >

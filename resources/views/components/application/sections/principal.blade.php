@@ -34,11 +34,14 @@
 
     </div >
 
-    <div class="flex items-center gap-5 pl-8 mt-16" >
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-5 mt-16 w-full" >
 
         <a
             href="{{ route('register') }}"
-            class="w-48 h-10 bg-transparent border text-white font-semibold rounded-xl flex justify-center items-center gap-2 hover:cursor-pointer hover:bg-gradient-to-r hover:from-primary-green hover:to-primary-blue hover:border-black hover:text-gray-900 dark:hover:text-zinc-200"
+            class="w-full sm:w-48 h-10 px-3 bg-transparent border text-white font-semibold
+                    rounded-xl flex justify-center items-center gap-2 hover:cursor-pointer
+                    hover:bg-gradient-to-r hover:from-primary-green hover:to-primary-blue
+                    hover:border-black hover:text-gray-900 dark:hover:text-zinc-200"
         >
             Inscrever-se
             <x-icons.arrow-right-start-on-rectangle class="w-6 h-6" />
@@ -47,7 +50,10 @@
         <a
             href="#about"
             @click="$refs.contact.scrollIntoView({ top: $refs.contact.scrollHeight, behavior: 'smooth' });"
-            class="w-48 h-10 bg-transparent border text-white font-semibold rounded-xl flex justify-center items-center gap-2 hover:cursor-pointer hover:bg-gradient-to-r hover:from-primary-green hover:to-primary-blue hover:border-black hover:text-gray-900 dark:hover:text-zinc-200"
+            class="w-full sm:w-48 h-10 px-3 bg-transparent border text-white font-semibold
+                    rounded-xl flex justify-center items-center gap-2 hover:cursor-pointer
+                    hover:bg-gradient-to-r hover:from-primary-green hover:to-primary-blue
+                    hover:border-black hover:text-gray-900 dark:hover:text-zinc-200"
         >
             Entre em contato
             <x-icons.inbox-arrow-down class="w-6 h-6" />
