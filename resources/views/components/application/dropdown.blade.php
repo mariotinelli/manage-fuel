@@ -22,6 +22,8 @@
 
         <x-slot name="content" >
 
+            <x-application.theme-toggle />
+
             @auth
                 <x-dropdown-link :href="route('dashboard')" >
                     {{ __('Dashboard') }}
