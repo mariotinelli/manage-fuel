@@ -6,7 +6,7 @@
 
     <h1 class="text-4xl text-blue-800 dark:text-zinc-200 text-center" > Quem somos </h1 >
 
-    <div class="flex flex-col md:grid md:grid-cols-3 gap-6 mt-16 text-lg text-gray-500 dark:text-zinc-200 md:divide-x" >
+    <div class="flex flex-col gap-6 mt-16 text-lg text-gray-500 dark:text-zinc-200 lg:grid lg:grid-cols-3 lg:divide-x" >
 
         <div class="p-2 text-center flex items-center justify-center" >
             <p class="text-justify md:text-center" >

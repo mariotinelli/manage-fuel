@@ -46,6 +46,8 @@
 </head >
 <body class="font-sans bg-white dark:bg-gray-900 antialiased" >
 
+@livewire('loading')
+
 <x-application.nav.navigation />
 
 <main
