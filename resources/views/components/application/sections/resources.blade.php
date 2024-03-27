@@ -1,7 +1,7 @@
 <div
     x-ref="resources"
     id="resources"
-    class="py-24 px-0 sm:px-14 md:px-20 lg:px-32"
+    class="py-24 px-3 sm:px-14 md:px-20 lg:px-32"
 >
 
     <div >

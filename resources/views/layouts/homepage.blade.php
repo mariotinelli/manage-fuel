@@ -53,7 +53,7 @@
     class="pt-[80px] overflow-y-auto max-h-[calc(100%-80px)]"
 >
 
-    <x-applications.home-sections />
+    <x-application.home-sections />
 
     <x-application.footer />
 
