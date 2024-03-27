@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Livewire\Homepage;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', Homepage::class)->name('homepage');
+Route::view('/', 'layouts.homepage')->name('homepage');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

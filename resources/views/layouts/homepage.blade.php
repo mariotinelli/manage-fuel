@@ -76,20 +76,20 @@
 >
     <x-application.logo />
 
-    <x-application.sections />
+    <x-application.nav.sections />
 
     <x-application.dropdown />
 </nav >
 
-<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900" >
-    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg" >
-        {{ $slot }}
-    </div >
+<div class="pt-[80px] overflow-auto" >
+
+    <x-applications.home-sections />
+
+    <x-application.footer />
+
+    <x-application.scroll-to-top />
+
 </div >
-
-<x-application.footer />
-
-<x-application.scroll-to-top />
 
 @livewireScriptConfig
 </body >
