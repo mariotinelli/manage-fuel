@@ -1,5 +1,7 @@
 <a href="/" >
-    <span class="text-lg md:text-2xl font-bold bg-gradient-to-r from-primary-green to-primary-blue text-transparent bg-clip-text" >
-        Tinelli Transportes
-    </span >
+    <img
+        {{ $attributes->merge(['class' => 'h-10 w-auto'])}}
+        alt="Logo"
+        src="{{ asset('assets/images/logo-contorno-512x512.png') }}"
+    />
 </a >

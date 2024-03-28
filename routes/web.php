@@ -7,7 +7,9 @@ use Illuminate\Auth\Middleware\Authenticate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'layouts.homepage')->name('home');
+Route::view('/', 'home')->name('home');
+
+
 Route::get('/subscribe', Subscribe::class)->name('subscribe');
 
 Route::get('/billing', function (Request $request) {
