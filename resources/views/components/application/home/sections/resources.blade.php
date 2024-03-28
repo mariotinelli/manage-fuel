@@ -15,7 +15,7 @@
         icon="user-group"
     />
 
-    <hr />
+    <hr class="w-full" />
 
     <x-application.home.sections.resources-card
         title="Gerenciamento de Veículos"
@@ -29,7 +29,7 @@
         icon="truck"
     />
 
-    <hr />
+    <hr class="w-full" />
 
     <x-application.home.sections.resources-card
         title="Controle de Abastecimentos"
@@ -42,7 +42,7 @@
         icon="gas-supply"
     />
 
-    <hr />
+    <hr class="w-full" />
 
     <x-application.home.sections.resources-card
         title="Histórico de Ações"
