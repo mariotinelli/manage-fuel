@@ -1,4 +1,4 @@
-<x-guest-layout >
+<x-auth-layout >
     <!-- Session Status -->
     <x-auth-session-status class="mb-4"
                            :status="session('status')" />
@@ -55,4 +55,4 @@
             </x-gradient-primary-button >
         </div >
     </form >
-</x-guest-layout >
+</x-auth-layout >
