@@ -6,7 +6,9 @@
 
         <x-slot name="trigger" >
 
-            <div class="relative w-10 h-10 overflow-hidden bg-gray-100 dark:bg-gray-600 rounded-full border transition ease-in-out duration-150 hover:cursor-pointer" >
+            <div class="relative w-10 h-10 overflow-hidden bg-gray-200 dark:bg-gray-600 rounded-full
+                border transition ease-in-out duration-150 hover:cursor-pointer"
+            >
                 <svg class="absolute w-12 h-12 text-gray-400 -left-1"
                      fill="currentColor"
                      viewBox="0 0 20 20"

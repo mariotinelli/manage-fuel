@@ -1,5 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
+<html
+    lang="{{ str_replace('_', '-', app()->getLocale()) }}"
+    x-data="{ darkMode: false }"
+    @toggle-theme.window="darkMode = $event.detail"
+    x-cloak
+    x-bind:class="{'dark' : darkMode === true}"
+    x-init="
+        if (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            localStorage.setItem('darkMode', JSON.stringify(true));
+        }
+        darkMode = JSON.parse(localStorage.getItem('darkMode'));
+        $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))
+    "
+>
+
 <head >
     <meta charset="utf-8" >
     <meta name="viewport"
@@ -16,27 +30,29 @@
           rel="stylesheet" />
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite('resources/css/app.css')
     @livewireStyles
 </head >
-<body class="font-sans antialiased" >
-<div class="min-h-screen bg-gray-100 dark:bg-gray-900" >
-    @include('layouts.navigation')
+<body
+    class="font-sans antialiased"
+    x-data="{ sidebarOpen: true }"
+>
 
-    <!-- Page Heading -->
-    @if (isset($header))
-        <header class="bg-white dark:bg-gray-800 shadow" >
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8" >
-                {{ $header }}
-            </div >
-        </header >
-    @endif
+<div class="min-h-screen bg-gray-100 dark:bg-gray-900" >
+
+    <x-application.user-area.header />
 
     <!-- Page Content -->
-    <main >
-        {{ $slot }}
-    </main >
+    <div class="pt-20 flex h-[calc(100vh-80px)]" >
+        <x-application.user-area.sidebar />
+
+        <main class="h-full w-full p-6" >
+            {{ $slot }}
+        </main >
+    </div >
 </div >
+
+@vite('resources/js/app.js')
 @livewireScriptConfig
 </body >
 </html >
